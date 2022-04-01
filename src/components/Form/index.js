@@ -9,11 +9,9 @@ export default function Form(){
     const [messageImc, setMessageImc] = useState("")
     const [imc, setImc] = useState(null)
     const [textButton, setTextButton] = useState("Calcular")
-    const [isError, setIsError] = useState(false);
+    const [isError, setIsError] = useState(false)
 
     function imcCalculator(){
-        height = useState(height.replace(',', '.'))
-        setWeight(weight.replace(',', '.'))
         return setImc((weight/(height*height)).toFixed(2))
     }
     
